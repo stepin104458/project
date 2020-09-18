@@ -1,4 +1,5 @@
 #include<Fs.h>
+#include<stdlib.h>
 
 void mainmenu(void)
 {
