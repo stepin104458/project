@@ -174,7 +174,7 @@ void deleterecord(void)
 administration();
 }
 
-void searchrecord(void)
+/*void searchrecord(void)
 {
 	system("cls");
     int d;
@@ -260,7 +260,7 @@ void searchrecord(void)
 	searchrecord();
     }
     fclose(fp);
-}
+}*/
 
 void viewrecord(void) 
 {
@@ -689,58 +689,8 @@ void details(void)
 
 void aboutus(void)
 {
-	system("cls");
-	printf("PEOPLE BEHIND THIS PROJECT :\n\n   -->Rohan Singh\n\n   -->Ashutosh Kumar\n\n   -->Naveen Prakash Satyarthi\n\n   -->Vishal Katiyar\n\n   -->Priyanshu Verma\n\n                       *****************************THANK YOU*****************************");
-	printf("\n\n");
-	printf("    Press Any Key To Go Back.");
+	
 	if(getch())
 	mainmenu();
 }
 
-/*void Password(void)
-{
-	system("cls");
-	char d[30]="PASSWORD PROTECTED";
-	char ch,pass[10];
-	int i=0,j;
-	for(j=0;j<20;j++)
-	{
-		delay(50);
-		printf("*");
-	}
-	for(j=0;j<20;j++)
-	{
-		delay(50);
-		printf("%c",d[j]);
-	}
-	for(j=0;j<20;j++)
-	{
-		delay(50);
-		printf("*");
-	}
-	printf("ENTER PASSWORD : ");
-	while(ch!=13)
-	{
-		ch=getch();
-		if(ch!=13 && ch!=8)
-		{
-			putch('*');
-			pass[i]=ch;
-			i++;
-		}
-	}
-	pass[i]='\0';
-	if(strcmp(pass,password)==0)
-	{
-		printf("PASSWORD MATCHED !!!\n\n");
-		printf("Press Any Key To Continue......\n\n");
-		getch();
-		mainmenu();
-	}
-	else
-	{
-		printf("WARNING ! INCORRECT PASSWORD....");
-		getch();
-		Password();
-	}
-}*/
